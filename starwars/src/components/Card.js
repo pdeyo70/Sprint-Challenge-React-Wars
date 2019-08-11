@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
+
 const CardStyler = styled.div`
     color: #073964;
     text-shadow: -2px 0px 4px yellow;
@@ -14,16 +15,18 @@ const CardStyler = styled.div`
     font-family: 'Exo', sans-serif;
 `;
 
+
+
 export default function Card(props) {
 
     return (
         <CardStyler>
-            <h4 className='name'>{props.char.name}</h4>
-            <section className='birthYear'>Born:  {props.char.birth_year}</section>
-            <section className='gender'>Gender: {props.char.gender}</section>
-            <section className='skinColor'>Complexion: {props.char.skin_color}</section>
-            <section className='hairColor'>Hair: {props.char.hair_color}</section>
-            <section className='eyeColor'>Eyes: {props.char.eye_color}</section>
+            <h4>{props.char.name}</h4>
+            <section>Born:  {props.char.birth_year}</section>
+            <section>Gender: {props.char.gender}</section>
+            <section>Complexion: {props.char.skin_color}</section>
+            <section>Hair: {props.char.hair_color}</section>
+            <section>Eyes: {props.char.eye_color}</section>
         </CardStyler>
     )
 }

@@ -7,7 +7,7 @@ const ContStyler = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-`;
+`
 
 export default function CardCont(props) {
     console.log(props);
